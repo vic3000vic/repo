@@ -18,6 +18,8 @@ add("Первый заголовок", "Первый текст", $textStorage);
 add("Второй заголовок", "Второй текст", $textStorage);
 
 echo '<br>';
+echo '<br>';
+
 echo "Массив после добавления двух текстов:\n";
 echo '<br>';
 print_r($textStorage);
