@@ -83,9 +83,7 @@ echo '<br>';
 $editFail = edit(10, "Заголовок", "Текст", $textStorage);
 echo "Попытка редактирования несуществующего текста: " . ($editFail ? "успешно" : "не найдено") . "\n";
 echo '<br>';
-
-
-
+//
 /*
 //Step 11 Git
 git add "test_zada_6.php"
