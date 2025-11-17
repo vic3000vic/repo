@@ -79,10 +79,30 @@ echo '<br>';
 print_r($textStorage);
 echo '<br>';
 
+echo "Массив после редактирования:\n";
+
+
 // Step 10 попытка редактировать несуществующий индекс
 $editFail = edit(10, "Заголовок", "Текст", $textStorage);
 echo "Попытка редактирования несуществующего текста: " . ($editFail ? "успешно" : "не найдено") . "\n";
 echo '<br>';
+
+
+echo "BEGIN GITHUB\n";
+
+$repoPath = '/путь/к/локальному/репозиторию'; // локальный путь, НЕ URL chdir($repoPath); // Добавляем файлы
+exec('git add . 2>&1', $output1, $code1);
+// Делаем коммит
+exec('git commit -m "Auto commit from PHP script" 2>&1', $output2, $code2);
+// Отправляем на GitHub
+exec('git push origin main 2>&1', $output3, $code3);
+// Печать вывода
+echo "<pre>"; echo "ADD:\n" . implode("\n", $output1) . "\n\n";
+
+echo "COMMIT:\n" . implode("\n", $output2) . "\n\n";
+echo "PUSH:\n" . implode("\n", $output3) . "\n\n";
+echo "</pre>";
+
 //
 /*
 //Step 11 Git
