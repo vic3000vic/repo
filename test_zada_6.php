@@ -103,6 +103,8 @@ echo "COMMIT:\n" . implode("\n", $output2) . "\n\n";
 echo "PUSH:\n" . implode("\n", $output3) . "\n\n";
 echo "</pre>";
 
+echo "test_zada_6.php for gitlab\n";
+
 //
 /*
 //Step 11 Git
